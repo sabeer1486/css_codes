@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Next level hover button effect</title>
+        <style>
+            body
+            {
+                margin: 0;
+                padding: 0;
+            }
+            a
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-decoration: none;
+                font-size: 40px;
+                text-transform: uppercase;
+                height: 80px;
+                width: 220px;
+                line-height: 80px;
+                text-align: center;
+                background: blue;
+                border: 2px solid blue;
+                color: #fff;
+                letter-spacing: 5px;
+                font-family: sans-serif;
+                box-shadow: 0 5px 5px #000;
+            }
+            a:hover
+            {
+                background: #fff;
+                text-shadow: 0 5px 5px #000;
+            }
+            a::before, a::after
+            {
+                content: '';
+                position: absolute;
+                width: 54%;
+                height: 100%;
+                background: blue;
+                z-index: -1;
+                opacity: 0;
+            }
+            a:hover::before
+            {
+                opacity: 1;
+                top: 5px;
+                left: -5px;
+                box-shadow: 3px 2px 5px #000;
+                animation: animate2 1s linear infinite;
+            }
+            a:hover::after
+            {
+                opacity: 1;
+                top: -5px;
+                right: -5px;
+                box-shadow: -3px 2px 5px #000;
+                animation: animate1 1s linear infinite;
+            }
+            @keyframes animate1
+            {
+                0%
+                {
+                    top: 5px;
+                }
+                50%
+                {
+                    top: -5px;
+                }
+                100%
+                {
+                    top: 5px;
+                }
+            }
+            @keyframes animate2
+            {
+                0%
+                {
+                    top: -5px;
+                }
+                50%
+                {
+                    top: 5px;
+                }
+                100%
+                {
+                    top: -5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">button</a>
+    </body>
+</html>

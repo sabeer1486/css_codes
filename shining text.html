@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>first page</title>
+      <style>
+      body
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+p
+{
+    position: relative;
+    font-family: sans-serif;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip:  text;
+    -webkit-text-fill-color:transparent;
+}
+@keyframes animate
+{
+0%
+{
+    background-position: -500%;
+}
+100%
+{
+    background-position: 500%;
+}
+}
+      </style>
+    </head>
+    <body>
+        <p>shining text animation</p>
+    </body>
+</html>

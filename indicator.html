@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>indicator</title>
+        <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        .box
+        {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 150px;
+            width: 400px;
+            border: 2px solid #fff;
+            border-radius: 16px;
+        }
+        .box::before
+        {
+            content: '';
+            position: absolute;
+            top: 128px;
+            left: 180px;
+            height: 40px;
+            width: 40px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid transparent;
+            transform: rotate(45deg);
+            background: #000;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

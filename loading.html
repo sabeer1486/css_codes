@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>loading</title>
+		<style>
+				body
+				{
+				margin: 0;
+				padding: 0;
+				}
+				ul
+				{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				display: flex;
+				}
+				ul li
+				{
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				list-style: none;
+				height: 40px;
+				width: 2px;
+				background: transparent;
+				animation: animate 1.4s ease-out infinite;
+				}
+				ul li::after
+				{
+				content: '';
+				position: absolute;
+				top: 40px;
+				left: -4px;
+				height: 10px;
+				width: 10px;
+				background: #000;
+				border-radius: 50%;
+				}
+				@keyframes animate
+				{
+					0%
+					{
+						transform: rotate(0deg);
+					}
+					100%
+					{
+						transform: rotate(360deg);
+					}
+				}
+				ul li:nth-child(1)
+				{
+				animation-delay: 0.2s;
+				}
+				ul li:nth-child(2)
+				{
+				animation-delay: 0.4s;
+				}
+				ul li:nth-child(3)
+				{
+				animation-delay: 0.6s;
+				}
+				ul li:nth-child(4)
+				{
+				animation-delay: 0.8s;
+				}
+				ul li:nth-child(5)
+				{
+				animation-delay: 1s;
+				}
+				ul li:nth-child(6)
+				{
+				animation-delay: 1.2s;
+				}
+				ul li:nth-child(7)
+				{
+				animation-delay: 1.4s;
+				}
+		</style>
+	</head>
+<body>
+	<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	</ul>
+</body>
+</html>
